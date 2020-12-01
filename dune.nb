@@ -1,0 +1,209 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      7207,        201]
+NotebookOptionsPosition[      6303,        181]
+NotebookOutlinePosition[      6699,        197]
+CellTagsIndexPosition[      6656,        194]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell["Import Terrestrial Parameters from Cresto Aleina et al.", "Text",
+ CellChangeTimes->{{3.813630234038093*^9, 3.8136302364355097`*^9}, {
+  3.813630267994874*^9, 3.813630307473378*^9}, {3.813631372484448*^9, 
+  3.813631380234907*^9}},ExpressionUUID->"c6e96634-d18f-4725-9d6f-\
+c428399ca41f"],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.8136303238978233`*^9, 
+  3.8136303254008503`*^9}},ExpressionUUID->"3ef5ce16-5f56-4427-9bd0-\
+ae9b081acd59"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"Le", " ", "->", " ", "2.501*^6"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Cp", " ", "\[Rule]", " ", "1000"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Cps", " ", "\[Rule]", " ", "1000"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"rhoU", " ", "\[Rule]", " ", ".72"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"rhoL", " ", "\[Rule]", " ", "1.2"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"rhoW", " ", "\[Rule]", " ", "1000"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"rhoS", "\[Rule]", " ", "1800"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"hU", " ", "\[Rule]", " ", "10000"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"hL", " ", "\[Rule]", " ", "1000"}], ";", 
+  RowBox[{"(*", " ", 
+   RowBox[{"this", " ", "is", " ", "a", " ", "huge", " ", "assumption"}], 
+   "*)"}], "\[IndentingNewLine]", 
+  RowBox[{"zT", " ", "\[Rule]", " ", ".1"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"zD", " ", "\[Rule]", " ", "4"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"z0", " ", "\[Rule]", " ", "10"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"nporosity", " ", "\[Rule]", " ", ".4"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"W0", " ", "\[Rule]", " ", "5"}], " ", ";"}], 
+  RowBox[{"(*", 
+   RowBox[{
+   "this", " ", "is", " ", "also", " ", "a", " ", "big", " ", 
+    "simplification"}], "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"beta", " ", "\[Rule]", " ", "2"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"emissU", " ", "\[Rule]", " ", ".25"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"emissL", " ", "\[Rule]", " ", ".22"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"emissW", " ", "\[Rule]", " ", ".6"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"emissS", " ", "\[Rule]", " ", ".85"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"albS", "\[Rule]", " ", ".25"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"albV", " ", "\[Rule]", " ", ".18"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Shade", " ", "\[Rule]", " ", ".5"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"tauT", " ", "\[Rule]", " ", "180"}], ";"}], "\[IndentingNewLine]", 
+
+ RowBox[{
+  RowBox[{
+   RowBox[{"tauD", " ", "\[Rule]", " ", "360"}], ";"}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"g", ".", "earth"}], "\[Rule]", " ", "9.8"}], 
+  ";"}], "\[IndentingNewLine]"}], "Input",
+ CellChangeTimes->{{3.81363138565101*^9, 3.813631452072762*^9}, {
+  3.81363151560172*^9, 3.813631866508823*^9}, {3.813632017577318*^9, 
+  3.8136321990109262`*^9}, {3.81363254244174*^9, 3.813632563167986*^9}, {
+  3.813681056576211*^9, 3.813681076463872*^9}, {3.814478437695662*^9, 
+  3.814478446807254*^9}, {3.81447897058567*^9, 3.814479012102537*^9}, {
+  3.81448072317223*^9, 
+  3.814480943228384*^9}},ExpressionUUID->"6c3cb1b9-43bb-4257-b1e1-\
+a3a8049a44e2"],
+
+Cell["\<\
+Make new parameters from Dune clues:
+\
+\>", "Text",
+ CellChangeTimes->{{3.813681090912026*^9, 
+  3.81368111374267*^9}},ExpressionUUID->"a6e4f18a-ff5f-4a50-9794-\
+ef84d2698b8c"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"g", ".", "dune"}], " ", "\[Rule]", 
+  RowBox[{".9", "*", 
+   RowBox[{"g", ".", "earth", " ", 
+    RowBox[{"(*", " ", 
+     RowBox[{"pg", ".", " ", "79"}], "*)"}]}]}]}]], "Input",
+ CellChangeTimes->{{3.8136811185102997`*^9, 
+  3.813681151405315*^9}},ExpressionUUID->"3cf44cea-13ab-4902-920b-\
+352e4ed8ca1c"],
+
+Cell["\<\
+Implement the first equation: temperature of the upper troposphere.
+\
+\>", "Text",
+ CellChangeTimes->{{3.814478376857564*^9, 
+  3.814478416871443*^9}},ExpressionUUID->"fb15258d-8982-4caf-9d35-\
+24f26a2081d8"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"TL", "[", "W_", "]"}], " ", "=", " ", 
+  RowBox[{
+   RowBox[{"Le", " ", 
+    RowBox[{"(", ")"}]}], " ", "+", " ", 
+   RowBox[{"rhoL", " ", "cP", " ", "hL", " ", 
+    RowBox[{"(", ")"}]}]}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"+", " ", 
+   RowBox[{"(", 
+    RowBox[{"1", "-", "emissL"}], ")"}]}], 
+  RowBox[{"(", 
+   RowBox[{"emissU", " ", "+", " ", 
+    RowBox[{"emissW", " ", 
+     RowBox[{"(", 
+      RowBox[{"W", "/", "W0"}], ")"}]}]}], ")"}], "emissS", " ", "sigma", " ", 
+  RowBox[{"TT", "^", "4"}]}], "\[IndentingNewLine]", 
+ RowBox[{"+", " ", 
+  RowBox[{"(", 
+   RowBox[{"emissU", " ", "+", " ", 
+    RowBox[{"emissW", " ", 
+     RowBox[{"(", 
+      RowBox[{"W", "/", "W0"}], ")"}]}]}], ")"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"-", "2"}], " ", 
+  RowBox[{"(", 
+   RowBox[{"emissU", " ", "+", " ", 
+    RowBox[{"emissW", " ", 
+     RowBox[{"(", 
+      RowBox[{"W", "/", "W0"}], ")"}]}]}], ")"}], " ", "sigma", " ", 
+  RowBox[{"TU", "^", "4"}]}]}], "Input",
+ CellChangeTimes->{{3.8144784232082367`*^9, 3.814478424239284*^9}, {
+   3.814478464270297*^9, 3.814478507116947*^9}, 3.814478948264576*^9, 
+   3.8144789826482897`*^9, {3.814479031357897*^9, 3.8144790592938766`*^9}, {
+   3.814479095932507*^9, 3.814479112275868*^9}, {3.8144791700594997`*^9, 
+   3.814479223607745*^9}, {3.814480953781066*^9, 3.8144809752429533`*^9}, {
+   3.8144810985362062`*^9, 
+   3.814481384120533*^9}},ExpressionUUID->"26e932ec-7cc5-4cc8-98b1-\
+8ccfdbc03296"]
+},
+WindowSize->{1908, 1035},
+WindowMargins->{{Automatic, 1404}, {Automatic, 0}},
+FrontEndVersion->"12.1 for Mac OS X x86 (64-bit) (June 19, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"54ead796-8101-462d-95e6-fb2b2dc159a6"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 294, 4, 44, "Text",ExpressionUUID->"c6e96634-d18f-4725-9d6f-c428399ca41f"],
+Cell[855, 26, 156, 3, 37, "Input",ExpressionUUID->"3ef5ce16-5f56-4427-9bd0-ae9b081acd59"],
+Cell[1014, 31, 3027, 80, 714, "Input",ExpressionUUID->"6c3cb1b9-43bb-4257-b1e1-a3a8049a44e2"],
+Cell[4044, 113, 186, 6, 73, "Text",ExpressionUUID->"a6e4f18a-ff5f-4a50-9794-ef84d2698b8c"],
+Cell[4233, 121, 341, 9, 37, "Input",ExpressionUUID->"3cf44cea-13ab-4902-920b-352e4ed8ca1c"],
+Cell[4577, 132, 218, 6, 73, "Text",ExpressionUUID->"fb15258d-8982-4caf-9d35-24f26a2081d8"],
+Cell[4798, 140, 1501, 39, 116, "Input",ExpressionUUID->"26e932ec-7cc5-4cc8-98b1-8ccfdbc03296"]
+}
+]
+*)
+
